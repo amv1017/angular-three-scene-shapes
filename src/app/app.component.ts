@@ -1,7 +1,9 @@
 import { Component } from "@angular/core";
-import { NgtCanvas } from "angular-three";
-
+import { NgtCanvas, extend } from "angular-three";
+import * as THREE from "three";
 import { SceneGraphComponent } from "./scene-graph/scene-graph.component";
+
+extend(THREE);
 
 @Component({
   selector: "app-root",
